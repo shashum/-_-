@@ -1,0 +1,17 @@
+{% load static %}
+<head>
+    <link rel = "stylesheet" href="{% static 'css/blog.css' %}">
+</head>
+
+<body>
+    <h1><strong>BASE 블록</strong></h1>
+    <div>
+        <a href="{% url 'home' %}">홈</a>
+        <a href="{% url 'login' %}">로그인</a>
+        <a href="{% url 'accounts:signup' %}">main.html</a>
+        <a href="{% url 'new' %}">글쓰기</a>
+        
+    </div>
+    {% block content %}
+    {% endblock %}
+</body>
